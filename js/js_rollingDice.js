@@ -12,7 +12,7 @@ window.onload =  ()=> {
 }
 
  const resetApp = ()=>{
-    id_img.src = "../images/dice.png";
+    id_img.src = "./images/dice.png";
     id_spanCoins.innerHTML = coins;
     // id_score.innerHTML = counter;
     id_button.addEventListener("click", rolldice);
@@ -23,7 +23,7 @@ const rolldice = () => {
     rnd = Math.random() * 6;
     rnd = Math.ceil(rnd);
  
-    id_img.src = `../images/${diceImg_ar[rnd]}`;
+    id_img.src = `./images/${diceImg_ar[rnd]}`;
 
     if(coins){
         coins--;
